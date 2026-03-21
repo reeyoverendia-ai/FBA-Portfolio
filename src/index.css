@@ -32,8 +32,8 @@ body {
   */
   background: linear-gradient(
     180deg, 
-    #A3B8A4 0%,   /* Seafoam Slate */
-    #C2D1C3 33%,  /* Dusty Mint */
+    #A0B1A8 0%,   /* Seafoam Slate */
+    #C2D1C3 25%,  /* Dusty Mint */
     #C4B9AA 65%,  /* Champagne Sand */
     #B8AD9E 100%  /* Deep Sand */
   ) !important;
