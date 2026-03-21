@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --pastel-blue: #A7C1C1;
+  --linen-taupe: #C4B9AA;
+  --champagne: #F4E7DA;
+  --ebony-clay: #4A443F;   /* Deepest - Use for Headings */
+  --warm-stone: #635D59;   /* Medium - Use for ALL Body Text */
+  --muted-taupe: #8E8680;  /* Lightest - Use for Footers/Small labels */
+}
+
+/* Force all structural layers to be transparent */
+#root, #root > div, main, section {
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* ✅ THE 'STREAMLINE' GRADIENT:
+     1. #A0B1A8 (Seafoam Slate) - The professional, cool anchor.
+     2. #C2D1C3 (Dusty Mint) - The fresh, organic transition.
+     3. #C4B9AA (Champagne Sand) - The warm, premium core.
+     4. #B8AD9E (Deep Sand) - The grounded, solid base.
+  */
+  background: linear-gradient(
+    180deg, 
+    #A3B8A4 0%,   /* Seafoam Slate */
+    #C2D1C3 33%,  /* Dusty Mint */
+    #C4B9AA 65%,  /* Champagne Sand */
+    #B8AD9E 100%  /* Deep Sand */
+  ) !important;
+  background-attachment: fixed !important;
+  
+  /* ✅ CRITICAL: Dark text for the Executive contrast on light linen */
+  color: #2D2A26 !important; 
+  min-height: 100vh;
+}
+
+/* This ensures no hidden 'after' or 'before' layers are adding black tints */
+body::before {
+  display: none !important;
+}
+
+/* --- Typography --- */
+
+.text-heading {
+  color: var(--warm-stone); /* ✅ Changed from champagne */
+  letter-spacing: -0.02em;
+}
+
+.text-body {
+  color: var(--ebony-clay); /* ✅ Changed from champagne */
+  opacity: 1;               /* ✅ Set to 1 since the color is already soft */
+  line-height: 1.7;
+}
+
+.text-label {
+  color: var(--ebony-clay); /* ✅ Changed from pastel-blue for better contrast */
+  font-size: 0.75rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* --- Glassmorphism --- */
+
+.glass-card {
+  /* Using a dark, semi-transparent taupe to create depth */
+  background: rgba(45, 42, 38, 0.08); 
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  /* Use a solid Muted Gold for the border so it looks like a frame */
+  border: 1px solid rgba(142, 125, 98, 0.3); 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.glass-soft {
+  /* This level of blur is what gives that premium executive feel */
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: all 0.3s ease;
+}
+
+.glass-soft:focus-within {
+  background: rgba(167, 193, 193, 0.1);
+  border: 1px solid var(--pastel-blue); 
+  box-shadow: 0 0 20px rgba(167, 193, 193, 0.2);
+  outline: none;
+}
+
+/* --- Buttons --- */
+
+.premium-button {
+  background-color: var(--pastel-blue);
+  color: #0F1115; 
+  font-weight: 700;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.premium-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(167, 193, 193, 0.4);
+  filter: brightness(1.1);
+}
+
