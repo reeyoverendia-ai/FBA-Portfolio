@@ -33,6 +33,6 @@ export const heliumSkills = [
     tool: 'Google Trends',
     exp: 'Trend Validation',
     detail: 'Confirmed long-term consumer interest in home office and desk organization categories.',
-    image: '/images/google-trend1.png'
+    image: '/images/google-trend2.png'
   }
 ];
