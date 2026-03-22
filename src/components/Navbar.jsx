@@ -41,49 +41,90 @@ export default function Navbar({ setView }) {
          {/* WORK WITH ME BUTTON */}
          <a
          href="#contact"
-         className="ml-4 px-8 py-3.5 rounded-full bg-black/40 border border-white/40 !text-[#FDFBF7] font-bold tracking-widest hover:bg-black/60 transition-all backdrop-blur-sm shadow-lg"
-         >
+         onClick={() => setIsOpen(false)}
+         style={{ 
+         color: '#FDFBF7', 
+        /* INCREASED OPACITY: We're moving from 0.45 to 0.65 to hide the dark tree background */
+        backgroundColor: 'rgba(142, 125, 98, 0.65)', 
+        border: '1.5px solid rgba(244, 231, 218, 0.7)', 
+        /* STACKED GLOW: One tight gold glow, one wide champagne glow */
+        boxShadow: '0 0 20px rgba(142, 125, 98, 0.6), 0 0 40px rgba(244, 231, 218, 0.2)',
+        backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)',
+        textShadow: '0 1px 4px rgba(0,0,0,0.2)'
+         }}
+        onMouseEnter={(e) => {
+        e.currentTarget.style.backgroundColor = 'rgba(142, 125, 98, 0.85)';
+        e.currentTarget.style.boxShadow = '0 0 35px rgba(142, 125, 98, 0.9), 0 0 15px rgba(253, 251, 247, 0.5)';
+        }}
+        onMouseLeave={(e) => {
+        e.currentTarget.style.backgroundColor = 'rgba(142, 125, 98, 0.65)';
+        e.currentTarget.style.boxShadow = '0 0 20px rgba(142, 125, 98, 0.6), 0 0 40px rgba(244, 231, 218, 0.2)';
+        }}
+        className="ml-4 px-8 py-3 rounded-full transition-all duration-300 
+             flex items-center justify-center font-bold text-sm 
+             tracking-widest uppercase hover:scale-105 active:scale-95"
+              >
          WORK WITH ME
          </a>
        </nav>
 
       {/* MOBILE OVERLAY MENU (Appears when Menu is clicked) */}
-      <div className={`fixed inset-0 bg-[#2D2A26] z-40 transition-transform duration-300 flex flex-col items-center justify-center gap-10 ${isOpen ? 'translate-y-0' : '-translate-y-full'} md:hidden px-6`}>
+      <div className={`fixed inset-0 z-50 transition-transform duration-300 flex flex-col items-center justify-center gap-10 ${isOpen ? 'translate-y-0' : '-translate-y-full'} md:hidden px-6`}
+     style={{ 
+       /* Sage Green to Champagne to Deep Sand Gradient */
+       background: 'linear-gradient(135deg, #A3B899 0%, #B8AD9E 50%, #C2D1C3 100%)',
+     }}>
   
-  {/* The Links - Using Inline Style to force Ivory */}
-  <a href="#about" onClick={() => setIsOpen(false)} style={{ color: '#FDFBF7', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }} className="text-3xl font-bold tracking-[0.2em]">ABOUT</a>
-  <a href="#services" onClick={() => setIsOpen(false)} style={{ color: '#FDFBF7', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }} className="text-3xl font-bold tracking-[0.2em]">SERVICES</a>
-  <a href="#skills" onClick={() => setIsOpen(false)} style={{ color: '#FDFBF7', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }} className="text-3xl font-bold tracking-[0.2em]">PROOF</a>
+  {/* THE CLOSE BUTTON - Only one Ivory "X", positioned clearly */}
+  <button 
+    onClick={() => setIsOpen(false)} 
+    className="absolute top-8 right-8 p-2 z-[60]"
+  >
+    <X className="w-8 h-8 !text-[#FDFBF7] drop-shadow-md" />
+  </button>
+
+  {/* NAV LINKS - Ivory with a soft shadow for readability */}
+  <a href="#about" onClick={() => setIsOpen(false)} 
+     style={{ color: '#FDFBF7', textShadow: '0 2px 15px rgba(74, 68, 63, 0.4)' }} 
+     className="text-3xl font-bold tracking-[0.2em] uppercase">
+    ABOUT
+  </a>
+  
+  <a href="#services" onClick={() => setIsOpen(false)} 
+     style={{ color: '#FDFBF7', textShadow: '0 2px 15px rgba(74, 68, 63, 0.4)' }} 
+     className="text-3xl font-bold tracking-[0.2em] uppercase">
+    SERVICES
+  </a>
+  
+  <a href="#skills" onClick={() => setIsOpen(false)} 
+     style={{ color: '#FDFBF7', textShadow: '0 2px 15px rgba(74, 68, 63, 0.4)' }} 
+     className="text-3xl font-bold tracking-[0.2em] uppercase">
+    PROOF
+  </a>
+  
   <button 
     onClick={() => { setView('resume'); setIsOpen(false); }} 
-    style={{ color: '#FDFBF7', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }} 
+    style={{ color: '#FDFBF7', textShadow: '0 2px 15px rgba(74, 68, 63, 0.4)' }} 
     className="text-3xl font-bold tracking-[0.2em] uppercase"
   >
     VIEW RESUME
   </button>
 
-  {/* THE WORK WITH ME GLASS BUTTON (Centered) */}
+  {/* THE WORK WITH ME BUTTON - Centered Gold Glass */}
   <div className="w-full flex justify-center mt-4">
     <a
       href="#contact"
       onClick={() => setIsOpen(false)}
-      style={{ color: '#FDFBF7' }} 
-      className="px-8 py-3.5 rounded-full border border-[#F4E7DA]/60 bg-white/10
-             transition-all duration-300 flex items-center justify-center
-             
-             /* 1. Base Glow: Stronger presence */
-             shadow-[0_0_20px_rgba(244,231,218,0.3)]
-             
-             /* 2. Hover Glow: Intense Bloom for Desktop */
-             hover:shadow-[0_0_35px_rgba(244,231,218,0.7),_0_0_10px_rgba(244,231,218,0.4)] 
-             hover:bg-white/25 hover:scale-[1.05]
-             
-             /* 3. Active Glow: Mobile Tap Burst */
-             active:shadow-[0_0_40px_rgba(244,231,218,0.9)]
-             active:scale-95 
-             backdrop-blur-md font-bold tracking-widest text-base"
-                 >
-             WORK WITH ME
+      style={{ 
+        color: '#FDFBF7', 
+        backgroundColor: 'rgba(142, 125, 98, 0.5)', 
+        border: '1.5px solid rgba(244, 231, 218, 0.7)',
+        boxShadow: '0 10px 30px rgba(142, 125, 98, 0.4)'
+      }}
+      className="px-10 py-4 rounded-full text-center font-bold text-xl tracking-widest uppercase active:scale-95 transition-all"
+                    >
+                    WORK WITH ME
                   </a>
                </div>
              </div>

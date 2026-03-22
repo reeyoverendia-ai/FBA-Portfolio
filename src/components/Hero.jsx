@@ -8,7 +8,7 @@ export default function Hero() {
       
       {/* 🖼️ Background Image */}
       <img 
-        src="/images/garden.png" 
+        src="/images/garden2.png" 
         alt="Background" 
         // CHANGE 2: Added 'object-right' for mobile to ensure the best part of the garden/sand is visible
         className="absolute inset-0 w-full h-full object-cover object-right md:object-center z-0"
