@@ -25,15 +25,15 @@ export default function Hero() {
         {/* HEADING */}
         {/* CHANGE 4: Adjusted text size to 2xl for mobile so words don't overlap */}
         <h1 className="text-2xl md:text-4xl font-extrabold mb-6 text-[#FDFBF7] leading-tight tracking-tight">
-          Scale Your Amazon FBA Business <br className="hidden md:block" />
+          Scale Your Online Presence <br className="hidden md:block" />
           Through <span className="text-[#C4B9AA]">Clear, Structured Workflow.</span>
         </h1>
 
         {/* BODY TEXT */}
         {/* CHANGE 5: Centered text margin 'mx-auto' for mobile focus */}
         <p className="max-w-sm mx-auto md:mx-0 text-xs md:text-base text-[#FDFBF7] opacity-90 mb-8 md:mb-10 leading-relaxed font-medium">
-          Move beyond guesswork with proven systems for research, sourcing, and listing
-          optimization — built for clarity and decision accuracy.
+          Move beyond guesswork with proven systems for data integrity, process
+          standardization and operational support — built for clarity and decision accuracy.
         </p>
 
         {/* ✅ THE GLOWING ACTION BUTTONS */}
