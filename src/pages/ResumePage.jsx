@@ -5,29 +5,23 @@ import jsPDF from 'jspdf';
 const ResumePage = () => {
   const resumeRef = useRef();
 
-  const downloadPDF = async () => {
-    const element = resumeRef.current;
-    if (!element) return;
+ const downloadPDF = async () => {
+  const element = resumeRef.current;
+  if (!element) return;
 
-    // We temporarily force the element to its A4 width for the capture
-    // so the PDF doesn't look "squished" if downloaded from a phone.
-    const originalStyle = element.style.width;
-    element.style.width = '210mm';
+  const canvas = await html2canvas(element, {
+    scale: 2, // 2 is usually enough for a clear PDF and keeps the file size small
+    useCORS: true,
+    logging: false,
+    backgroundColor: '#ffffff',
+    windowWidth: 794, // This is roughly 210mm in pixels at 96dpi
+  });
 
-    const canvas = await html2canvas(element, {
-      scale: 2.5,
-      useCORS: true,
-      logging: false,
-      backgroundColor: '#ffffff',
-    });
-
-    element.style.width = originalStyle; // Restore style
-
-    const imgData = canvas.toDataURL('image/png');
-    const pdf = new jsPDF('p', 'mm', 'a4');
-    pdf.addImage(imgData, 'PNG', 0, 0, 210, 297);
-    pdf.save('Nyree_Jo_Verendia_ATS_Resume.pdf');
-  };
+  const imgData = canvas.toDataURL('image/png');
+  const pdf = new jsPDF('p', 'mm', 'a4');
+  pdf.addImage(imgData, 'PNG', 0, 0, 210, 297);
+  pdf.save('Nyree_Jo_Verendia_ATS_Resume.pdf');
+};
 
   const resumeData = {
     name: 'NYREE JO VERENDIA',
@@ -79,13 +73,6 @@ const ResumePage = () => {
       {/* BUTTON BOX: Stacks on mobile, side-by-side on desktop */}
       <div className="w-full max-w-[210mm] flex flex-col sm:flex-row justify-between items-center gap-4 mb-6">
         <button
-          onClick={() => window.history.back()}
-          className="w-full sm:w-auto px-6 py-3 rounded-full bg-[#f5f5f1] text-[#5F868A] font-semibold shadow active:scale-95 transition"
-        >
-          ← Back to Portfolio
-        </button>
-
-        <button
           onClick={downloadPDF}
           className="w-full sm:w-auto px-6 py-3 rounded-full bg-[#c58b18] text-white font-semibold shadow hover:opacity-90 active:scale-95 transition"
         >
@@ -93,17 +80,17 @@ const ResumePage = () => {
         </button>
       </div>
 
-      {/* THE RESUME CONTAINER */}
-      <div className="w-full overflow-x-auto flex justify-center pb-10">
-        <div
-          ref={resumeRef}
-          className="bg-white text-[#1f2937] shadow-xl origin-top"
-          style={{
-            width: '210mm', // Keep A4 width for PDF quality
-            minHeight: '297mm',
-            padding: '12mm 10mm md:16mm 18mm', // Adjusted padding for tighter mobile screens
-            boxSizing: 'border-box',
-          }}
+          {/* THE RESUME CONTAINER */}
+         <div className="w-full overflow-hidden flex justify-center pb-10 px-2">
+         <div
+        ref={resumeRef}
+        className="bg-white text-[#1f2937] shadow-xl origin-top sm:scale-100 scale-[0.4] sm:w-[210mm] w-[210mm]"
+        style={{
+        width: '210mm',
+        minHeight: '297mm',
+        padding: '16mm 18mm', // Use standard padding here
+        boxSizing: 'border-box',
+        }}
         >
           {/* Header */}
           <header className="border-b border-gray-200 pb-4 mb-6">
