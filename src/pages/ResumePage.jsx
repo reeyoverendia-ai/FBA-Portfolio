@@ -37,7 +37,7 @@ const ResumePage = () => {
     experience: [
       {
         title: 'Amazon FBA Support',
-        company: 'Freelance',
+        company: 'Personal Development',
         date: '2026',
         bullets: [
           'Conduct product research using Helium 10 to evaluate market demand, competition, pricing, and revenue potential.',
