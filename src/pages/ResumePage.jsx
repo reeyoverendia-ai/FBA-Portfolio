@@ -25,7 +25,7 @@ const ResumePage = () => {
 
   const resumeData = {
     name: 'NYREE JO VERENDIA',
-    title: 'Amazon FBA Support Specialist',
+    title: 'Amazon FBA Support Apprentice',
     contact: {
       location: 'Calamba, Laguna, Philippines',
       email: 'reeverendia@duck.com',
@@ -38,7 +38,7 @@ const ResumePage = () => {
       {
         title: 'Amazon FBA Support Specialist',
         company: 'Freelance',
-        date: '2026 – Present',
+        date: '2026',
         bullets: [
           'Conduct product research using Helium 10 to evaluate market demand, competition, pricing, and revenue potential.',
           'Support supplier sourcing workflows by reviewing quotations, comparing product specifications, and organizing supplier data.',
@@ -48,7 +48,7 @@ const ResumePage = () => {
       },
       {
         title: 'SAP QA Lead / Coordinator',
-        company: 'Accenture / AIG',
+        company: 'Accenture / HP',
         date: '2011 – 2025',
         bullets: [
           'Led QA coordination across enterprise SAP environments with strong focus on accuracy, validation, and process control.',
@@ -146,7 +146,7 @@ const ResumePage = () => {
           {/* Experience */}
           <section className="mb-6">
             <h3 className="text-[13px] font-bold uppercase tracking-wide border-l-4 border-[#c58b18] pl-3 mb-4 text-[#111827]">
-              Professional Experience
+              Personal Development & Professional Experience
             </h3>
 
             {resumeData.experience.map((job, index) => (
