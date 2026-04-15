@@ -36,7 +36,7 @@ const ResumePage = () => {
     tools: ['Helium 10', 'Amazon Seller Central', 'Canva', 'GitHub', 'SAP FS-CD', 'HP ALM', 'Slack'],
     experience: [
       {
-        title: 'Amazon FBA Support Specialist',
+        title: 'Amazon FBA Support',
         company: 'Freelance',
         date: '2026',
         bullets: [
