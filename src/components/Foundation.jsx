@@ -11,7 +11,7 @@ export default function Foundation() {
 
         {/* CHANGE 2: Responsive heading size to prevent awkward word wrapping */}
         <h2 className="text-[#635D59] text-2xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
-          Built on structured QA thinking
+          Built on logical QA thinking
         </h2>
 
         {/* CHANGE 3: Balanced body text size for readability */}
