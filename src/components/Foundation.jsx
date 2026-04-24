@@ -16,7 +16,7 @@ export default function Foundation() {
 
         {/* CHANGE 3: Balanced body text size for readability */}
         <p className="text-[#635D59] text-base md:text-lg leading-relaxed mb-10 font-medium opacity-90">
-          My background in QA and data validation brings precision, structure, and clarity into every Amazon workflow — from product research to sourcing and listing optimization.
+          My methodology is rooted in over a decade of Quality Assurance for SAP Financial systems. Whether I am analyzing property data or e-commerce markets, I apply the same rigor for data validation, error-free documentation, and process governance.
         </p>
 
         {/* THE GLASS CARD */}
