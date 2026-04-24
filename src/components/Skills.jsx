@@ -8,7 +8,7 @@ export default function Skills() {
 
   return (
     // CHANGE 1: Reduced vertical padding on mobile
-    <section id="skills" className="px-6 md:px-12 py-16 md:py-24 border-y border-[#C4B9AA]/30">
+    <section id="skills" className="scroll-mt-24 px-6 md:px-12 py-16 md:py-24 border-y border-[#C4B9AA]/30">
       <div className="max-w-6xl mx-auto">
         
         {/* Header Section */}
