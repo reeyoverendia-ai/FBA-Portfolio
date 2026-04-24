@@ -1,7 +1,7 @@
 export default function Foundation() {
   return (
     // CHANGE 1: Reduced padding for mobile (py-16) vs desktop (py-24)
-    <section className="py-16 md:py-24 px-6">
+    <section id="about" className="scroll-mt-24 py-12 md:py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto text-center">
 
         {/* Label: Scaled down slightly for mobile */}
