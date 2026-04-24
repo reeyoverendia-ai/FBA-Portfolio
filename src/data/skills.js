@@ -1,20 +1,20 @@
 export const heliumSkills = [
   {
     tool: 'Black Box',
-    exp: 'Opportunity Discovery',
-    detail: 'Identified a bamboo cable management niche with strong margin potential and buyer demand.',
+    exp: 'Market Identification',
+    detail: 'Identified high-yield opportunities by filtering large datasets based on specific financial criteria, market players & reviews.',
     image: '/images/blackbox.png'
   },
   {
     tool: 'Xray',
-    exp: 'Demand Validation',
-    detail: 'Validated product demand, pricing behavior, and revenue velocity for desk organization products.',
+    exp: 'Data Validation',
+    detail: 'Conducted deep-dive analysis into market trends, pricing velocity, and historical demand',
     image: '/images/xray2.png'
   },
   {
     tool: 'Cerebro + Magnet',
-    exp: 'Keyword Strategy',
-    detail: 'Mapped high-volume keyword opportunities to uncover ranking gaps and listing opportunities.',
+    exp: 'Strategic Intelligence',
+    detail: 'Leveraged competitive intelligence to identify gaps and optimize market positioning.',
     image: '/images/cerebro.png'
   },
   {
@@ -32,7 +32,7 @@ export const heliumSkills = [
   {
     tool: 'Google Trends',
     exp: 'Trend Validation',
-    detail: 'Confirmed long-term consumer interest in home office and desk organization categories.',
+    detail: 'Analyzed multi-month search volume and seasonal fluctuations to confirm long-term market viability and demand stability.',
     image: '/images/google-trend2.png'
   }
 ];
