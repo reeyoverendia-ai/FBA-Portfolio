@@ -33,7 +33,7 @@ const ResumePage = () => {
     },
     summary: 'Detail-oriented professional with 14 years of experience experience in complex systems quality assurance (SAP FS-CD), now specializing in market intelligence and operational sequence refinement. Proven track record in data normalization, competitive benchmarking, and risk mitigation to drive objective, evidence-based business decisions.',
     skills: ['Amazon Product Research', 'Supplier Sourcing', 'Listing Optimization', 'Keyword Research', 'Competitor Analysis', 'Data Validation', 'Workflow Documentation'],
-    tools: ['Helium 10', 'Amazon Seller Central', 'Canva', 'GitHub', 'SAP FS-CD', 'HP ALM', 'Slack'],
+    tools: ['Helium 10', 'Amazon Seller Central', 'Canva', 'GitHub / VS Code', 'SAP FS-CD', 'HP ALM', 'Slack'],
     experience: [
       {
         title: 'Amazon FBA',
