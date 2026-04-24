@@ -20,7 +20,7 @@ export default function Results() {
         </h2>
 
         <p className="text-[#635D59] text-sm md:text-lg max-w-3xl mx-auto mb-10 md:mb-14 opacity-90">
-          Each case study reflects a systematic, data-driven approach to Amazon FBA growth.
+          Each case study reflects a systematic, data-driven approach to E-commerce & Operations Framework.
         </p>
 
         {/* CHANGE 3: Grid stacks on mobile (grid-cols-1) and spreads on desktop (md:grid-cols-3) */}
