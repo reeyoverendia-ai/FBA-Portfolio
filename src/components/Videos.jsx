@@ -15,7 +15,7 @@ export default function Videos() {
           </p>
           {/* CHANGE 2: Responsive Heading size */}
           <h3 className="text-2xl md:text-5xl font-bold mb-6 text-[#635D59] tracking-tight leading-tight">
-            Walkthroughs of my Amazon workflow in action
+            Demonstration of Data-Driven Workflows
           </h3>
         </div>
 
