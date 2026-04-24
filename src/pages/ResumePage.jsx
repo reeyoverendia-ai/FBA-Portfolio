@@ -29,7 +29,7 @@ const ResumePage = () => {
     contact: {
       location: 'Calamba, Laguna, Philippines',
       email: 'reeverendia@duck.com',
-      website: 'streamlineandscale.vercel.app',
+      website: 'https://ree-evaluate.vercel.app/',
     },
     summary: 'Detail-oriented professional with 14 years of experience...',
     skills: ['Amazon Product Research', 'Supplier Sourcing', 'Listing Optimization', 'Keyword Research', 'Competitor Analysis', 'Inventory Support', 'Data Validation', 'Workflow Documentation'],
