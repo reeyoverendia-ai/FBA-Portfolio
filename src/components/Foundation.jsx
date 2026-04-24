@@ -29,7 +29,7 @@ export default function Foundation() {
           </h3>
 
           <p className="text-[#635D59] text-sm md:text-base leading-relaxed font-medium">
-            It ensures decisions are based on data, reduces costly mistakes, and improves consistency across all stages of product development.
+            It ensures decisions are based on data, reduces costly mistakes, and improves consistency across all stages of operational execution.
           </p>
         </div>
 
