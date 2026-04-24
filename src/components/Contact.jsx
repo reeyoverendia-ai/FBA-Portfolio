@@ -42,7 +42,7 @@ export default function Contact() {
                 Let’s connect
               </h2>
               <p className="text-base md:text-lg mb-10 max-w-lg mx-auto md:mx-0 text-[#635D59] leading-relaxed opacity-90">
-                Tell me what support you need for your Amazon business and I’ll get back to you with a structured, practical next step.
+                Tell me what support you need for your business and I’ll get back to you with a structured, practical next step.
               </p>
 
               <div className="space-y-4 md:space-y-6">
