@@ -1,8 +1,8 @@
 export default function Results() {
   const results = [
-    { value: "Strong Demand Signals", label: "Validated product demand and sales potential" },
-    { value: "Optimized Keywords", label: "Improved visibility through keyword structuring" },
-    { value: "Structured Decisions", label: "Reduced guesswork using data-driven workflows" },
+    { value: "Strong Demand Signals", label: "Identified market viability and growth potential through rigorous analysis" },
+    { value: "Refined Search-Term", label: "Improved visibility and data organization through strategic categorization" },
+    { value: "Standardized Decisions", label: "Reduced guesswork by utilizing objective workflows and fact-based logic" },
   ];
 
   return (
@@ -16,11 +16,11 @@ export default function Results() {
 
         {/* CHANGE 2: Responsive heading size to prevent awkward line breaks */}
         <h2 className="text-2xl md:text-5xl font-bold mb-6 text-[#8E8680] leading-tight">
-          Structured outcomes, not guesswork
+          Methodical outcomes, not guesswork
         </h2>
 
         <p className="text-[#635D59] text-sm md:text-lg max-w-3xl mx-auto mb-10 md:mb-14 opacity-90">
-          Each case study reflects a systematic, data-driven approach to E-commerce & Operations Framework.
+          Each case study reflects a systematic, quantitative approach to E-commerce & Operations Framework.
         </p>
 
         {/* CHANGE 3: Grid stacks on mobile (grid-cols-1) and spreads on desktop (md:grid-cols-3) */}
