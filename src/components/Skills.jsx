@@ -18,11 +18,11 @@ export default function Skills() {
           </p>
           {/* CHANGE 2: Responsive heading size */}
           <h3 className="text-2xl md:text-5xl font-bold mb-6 text-[#635D59] tracking-tight leading-tight">
-            The tools and workflow behind my product decisions
+            A Systematic Approach to Data-Driven Decisions
           </h3>
           <p className="max-w-3xl mx-auto text-[#635D59] text-base md:text-lg leading-relaxed font-medium opacity-90">
-            I use structured product research, keyword validation, and competitor analysis
-            to evaluate opportunities before moving into sourcing and listing optimization.
+            I leverage advanced analytical tools to validate opportunities,
+            minimize risk, and ensure structural accuracy.
           </p>
         </div>
 
