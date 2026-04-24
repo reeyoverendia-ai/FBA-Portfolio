@@ -59,7 +59,7 @@ export default function Contact() {
                 <div className="glass-soft rounded-[2rem] p-6 text-center sm:text-left">
                   <h3 className="text-xl md:text-2xl font-semibold mb-3 text-[#4A443F]">What to include</h3>
                   <p className="text-sm text-[#635D59] leading-relaxed">
-                    Share your product category, your current challenge, and whether you need help with research, sourcing, or listing optimization.
+                    Share your market niche, your current operational challenges, and whether you need support with market intelligence, procurement, or listing enhancement.
                   </p>
                 </div>
               </div>
