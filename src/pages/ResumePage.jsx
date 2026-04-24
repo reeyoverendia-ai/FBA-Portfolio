@@ -25,7 +25,7 @@ const ResumePage = () => {
 
   const resumeData = {
     name: 'NYREE JO VERENDIA',
-    title: 'Amazon FBA Support Apprentice',
+    title: 'Market Research & Operations Analyst',
     contact: {
       location: 'Calamba, Laguna, Philippines',
       email: 'reeverendia@duck.com',
