@@ -19,8 +19,8 @@ export default function Services() {
           </h3>
 
           <p className="text-[#635D59] leading-relaxed text-sm md:text-base">
-            My portfolio combines research, sourcing, and listing workflows into one
-            system designed to reduce guesswork and improve decision-making.
+            My portfolio combines market intelligence, lead qualification, and sequence
+            refinement into one system designed to reduce guesswork and improve decision-making.
           </p>
         </div>
 
