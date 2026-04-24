@@ -4,7 +4,7 @@ import { services } from '../data/services';
 export default function Services() {
   return (
     // CHANGE 1: Adjusted padding for mobile (py-12) vs desktop (py-20)
-    <section id="services" className="px-6 md:px-12 py-12 md:py-20">
+    <section id="services" className="scroll-mt-24 px-6 md:px-12 py-12 md:py-20">
       <div className="max-w-6xl mx-auto">
         
         {/* Header Section */}
