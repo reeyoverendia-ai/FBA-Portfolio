@@ -4,12 +4,12 @@ export const services = [
   {
     icon: Search,
     title: 'Market Analysis / Data Mining',
-    desc: 'Find profitable, data-backed product opportunities with strong demand and manageable competition.'
+    desc: 'Identify data-backed growth opportunities by validating market demand and assessing competitive landscapes.'
   },
   {
     icon: Factory,
     title: 'Procurement / Lead Generation',
-    desc: 'Identify reliable suppliers, compare pricing, and reduce sourcing risk before launch.'
+    desc: 'Identify reliable partners, analyze cost structures, and mitigate operational risk before project execution.'
   },
   {
     icon: TrendingUp,
