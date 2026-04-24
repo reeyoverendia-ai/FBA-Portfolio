@@ -11,12 +11,12 @@ export default function Foundation() {
 
         {/* CHANGE 2: Responsive heading size to prevent awkward word wrapping */}
         <h2 className="text-[#635D59] text-2xl md:text-5xl font-bold mb-6 tracking-tight leading-tight">
-          Built on logical QA thinking
+          Built on disciplined QA thinking
         </h2>
 
         {/* CHANGE 3: Balanced body text size for readability */}
         <p className="text-[#635D59] text-base md:text-lg leading-relaxed mb-10 font-medium opacity-90">
-          My methodology is rooted in over a decade of Quality Assurance for SAP Financial systems. Whether I am analyzing property data or e-commerce markets, I apply the same rigor for data validation, error-free documentation, and process governance.
+          My background in QA and data validation brings precision, structure, and operational rigor into every workflow—from market intelligence to procurement and sequence refinement.
         </p>
 
         {/* THE GLASS CARD */}
